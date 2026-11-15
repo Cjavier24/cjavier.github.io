@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 12</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Assignment 12</h1>
+
+    <p id="name"></p>
+    <p id="date"></p>
+
+    <script>
+    document.getElementById("name").innerHTML = "<h2>Javier Chacin</h2>";
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
+    </script>
+
+    <h2>What I Learned</h2>
+    <p>JavaScript is the language that makes web pages interactive, and as an aspiring web designer, I knew I had to learn it sooner or later. First of all, I was surprised to find out that JavaScript and Java are completely different languages, even though their names are so similar. I even had to double-check a quiz question about it! Second, I practiced with the code examples from the page. I used <code>getElementById()</code> to show my name on the page and <code>Date()</code> to display the current date. At first, my name kept disappearing because the second line of code replaced the first one, but after putting each one in its own element, everything worked. Mistakes like this one honestly help me understand how the code actually works. I also learned that JavaScript works with the DOM to do things like animate elements, create games, or check forms before sending them. Finally, the security section caught my attention, especially the part about never putting passwords inside scripts, since anybody can see the code. In summary, JavaScript will be very useful for my career. A website that looks nice is great, but a website that also responds to the user is even better, right?</p>
+
+    <canvas id="c1"></canvas>
+    <canvas id="c2"></canvas>
+
+    <script>
+    document.getElementById("c1").getContext("2d").fillText("Javier Chacin", 10, 50);
+    document.getElementById("c2").getContext("2d").fillRect(10, 10, 50, 50);
+    </script>
+</body>
+</html>
