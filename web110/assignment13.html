@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 13</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Assignment 13</h1>
+
+    <p>These are the single-table SELECT statements I used in the W3Schools SQL TryIt Editor:</p>
+    <ul>
+        <li>SELECT * FROM CUSTOMERS;</li>
+        <li>SELECT CustomerID, CustomerName FROM CUSTOMERS;</li>
+        <li>SELECT CustomerName, Address, City, PostalCode FROM CUSTOMERS WHERE Country = 'UK';</li>
+        <li>SELECT ContactName, CustomerName FROM CUSTOMERS ORDER BY ContactName;</li>
+        <li>SELECT COUNT(*) FROM CUSTOMERS;</li>
+        <li>SELECT Country, COUNT(*) FROM CUSTOMERS GROUP BY Country;</li>
+        <li>SELECT Country, COUNT(*) FROM CUSTOMERS GROUP BY Country ORDER BY COUNT(*) DESC, Country;</li>
+        <li>SELECT Country, COUNT(*) FROM CUSTOMERS GROUP BY Country HAVING COUNT(*) &gt; 10 ORDER BY COUNT(*) DESC, Country;</li>
+    </ul>
+
+    <p>These are the INSERT, UPDATE, and DELETE statements I used in the W3Schools SQL TryIt Editor:</p>
+    <ul>
+        <li>INSERT INTO SHIPPERS (ShipperID, ShipperName, Phone) VALUES (4, 'On Time Delivery', '(503) 555 0123');</li>
+        <li>UPDATE PRODUCTS SET Price = Price + 1;</li>
+        <li>UPDATE PRODUCTS SET Price = Price - 1;</li>
+        <li>UPDATE SHIPPERS SET ShipperName = 'On-Time Delivery' WHERE ShipperID = 4;</li>
+        <li>DELETE FROM SHIPPERS WHERE ShipperID = 4;</li>
+    </ul>
+
+    <p>In these activities, I learned that a database is an organized collection of data, and SQL is the standard language used to work with relational databases. I used SELECT to get data from a table, WHERE to filter rows, ORDER BY to sort the results, and COUNT, GROUP BY, and HAVING to count and group records. I also used INSERT, UPDATE, and DELETE to add, change, and remove data. As a future web designer, I can use this learning because many websites keep their information in databases like MySQL, so knowing basic SQL will help me understand and work with the data behind a website.</p>
+</body>
+</html>
